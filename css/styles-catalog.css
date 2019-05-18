@@ -40,9 +40,15 @@ a {
   content: url("../img/icons/icon-phone.svg");
 }
 
-.main-header__login li:first-child::before {
+.main-header__user li:first-child::before {
+  content: url("../img/icons/icon-user.svg");
+}
+
+.main-header__user li:first-child::after {
   content: url("../img/icons/icon-login.svg");
 }
+
+/*add NEW picture*/
 
 .container_black-gray {
   background: #293449;
