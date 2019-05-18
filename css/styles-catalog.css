@@ -48,6 +48,10 @@ a {
   content: url("../img/icons/icon-login.svg");
 }
 
+.breadcrumbs:first-child::before {
+  content: url("../img/icons/icon-home.svg");
+}
+
 /*add NEW picture*/
 
 .container_black-gray {
