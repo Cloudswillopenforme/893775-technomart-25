@@ -24,15 +24,15 @@ a {
   color: #ffffff;
 }
 
-.main-header__search::before {
+.main-header__search a::before {
   content: url("../img/icons/icon-search.svg");
 }
 
-.main-header__favourites::before {
+.main-header__favourites a::before {
   content: url("../img/icons/icon-favourites.svg");
 }
 
-.main-header__cart::before {
+.main-header__cart a::before {
   content: url("../img/icons/icon-cart.svg");
 }
 
@@ -40,7 +40,7 @@ a {
   content: url("../img/icons/icon-phone.svg");
 }
 
-.main-header__login li:first-child::before {
+.main-header__login-form__login a::before {
   content: url("../img/icons/icon-login.svg");
 }
 

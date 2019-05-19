@@ -24,15 +24,15 @@ a {
   color: #ffffff;
 }
 
-.main-header__search::before {
+.main-header__search a::before {
   content: url("../img/icons/icon-search.svg");
 }
 
-.main-header__favourites::before {
+.main-header__favourites a::before {
   content: url("../img/icons/icon-favourites.svg");
 }
 
-.main-header__cart::before {
+.main-header__cart a::before {
   content: url("../img/icons/icon-cart.svg");
 }
 
@@ -40,15 +40,15 @@ a {
   content: url("../img/icons/icon-phone.svg");
 }
 
-.main-header__user li:first-child::before {
+.main-header__user__current-user a::before {
   content: url("../img/icons/icon-user.svg");
 }
 
-.main-header__user li:first-child::after {
+.main-header__user__logout a::before {
   content: url("../img/icons/icon-login.svg");
 }
 
-.breadcrumbs:first-child::before {
+.breadcrumbs li:first-child a::before {
   content: url("../img/icons/icon-home.svg");
 }
 
