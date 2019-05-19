@@ -13,7 +13,11 @@
           <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина техники Техномарт">
         </a>
 
-        <div class="main-header__search">Поиск:</div>
+        <div class="main-header__search">
+          <form class="main-header__search__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="site-search">Поиск по сайту</label><input type="search" id="site-search" placeholder="Поиск">
+          </form>
+        </div>
         <div class="main-header__favourites"><a href="#">Закладки:0</a></div>
         <div class="main-header__cart"><a href="#">Корзина:0</a></div>
         <a class="main-header__make-order-btn" href="#">Оформить заказ</a>
@@ -26,8 +30,10 @@
       </h1>
 
       <section class="main-header__contacts">
-        <p class="main-header__contacts__phone">+7 (812) 555-05-55</p>
-        <p class="main-header__contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="main-header__contacts__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
+        <p class="main-header__contacts__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </p>
       </section>
 
 
@@ -39,7 +45,7 @@
 
       <nav class="main-header__main-nav_black-gray">
         <ul class="main-header__main-nav__site-nav">
-          <li><a href="#">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -72,7 +78,7 @@
           <li>ЖелДорЭкспедиция</li>
         </ul>
 
-        <a class="company-info__button" href="#">Подробнее о компании</a>
+        <a class="company-info__button button" href="#">Подробнее о компании</a>
 
       </section>
 
@@ -85,8 +91,9 @@
         </p>
 
         <div class="contacts__map">
-          <img src="img/map/map.jpg" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          <a class="contacts__map-big" href="#">Открыть большую карту</a>
+          <a class="contacts__map-big" href="#">
+            <img src="img/map/map.jpg" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Нажми, чтобы открыть большую карту">
+          </a>
         </div>
 
         <a class="contacts__send-email-button button">Заблудились? Напишите нам!</a>
@@ -110,8 +117,8 @@
       </nav>
 
       <div class="main-footer__contacts">
-        <p class="main-footer__contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="main-footer__contacts__phone">+7 (812) 555-05-55</p>
+        <p class="main-footer__contacts__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="main-footer__contacts__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
       </div>
 
       <ul class="main-footer__links">

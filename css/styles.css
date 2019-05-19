@@ -24,7 +24,7 @@ a {
   color: #ffffff;
 }
 
-.main-header__search a::before {
+.main-header__search form::before {
   content: url("../img/icons/icon-search.svg");
 }
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <link rel="stylesheet" href="css/styles-catalog.css">
   <meta charset="utf-8">
@@ -14,7 +14,11 @@
       <a class="main-header__logo">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина техники Техномарт">
       </a>
-      <div class="main-header__search">Поиск:</div>
+      <div class="main-header__search">
+        <form class="main-header__search__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="site-search">Поиск</label><input type="search" id="site-search" placeholder="Поиск">
+        </form>
+      </div>
       <div class="main-header__favourites"><a href="#">Закладки:0</a></div>
       <div class="main-header__cart"><a href="#">Корзина:10</a></div>
       <a class="main-header__make-order-btn" href="#">Оформить заказ</a>
@@ -27,8 +31,10 @@
     </h1>
 
     <div class="main-header__contacts">
-      <p class="main-header__contacts__phone">+7 (812) 555-05-55</p>
-      <p class="main-header__contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="main-header__contacts__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
+      <p class="main-header__contacts__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+      </p>
     </div>
 
 
@@ -99,31 +105,33 @@
 
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item1/item1.jpg" width="218" height="170" alt="">
+            <img src="img/item1/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 3000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 3000
           </h4>
-          <p class="catalog__list__item__price-old">
+          <p class="catalog__list__item__price-old" aria-label="Старая цена">
             22500 Р.
           </p>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             15500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item2/item2.jpg" width="218" height="170" alt="">
+            <img src="img/item2/item2.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 6000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 6000
           </h4>
-          <p class="catalog__list__item__price-old">
+          <p class="catalog__list__item__price-old" aria-label="Старая цена">
             30500 Р.
           </p>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             25500 Р.
           </p>
         </li>
@@ -136,92 +144,98 @@
             Перфоратор BOSCH
             BFG 2000
           </h4>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             12500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item4/item4.jpg" width="218" height="170" alt="">
+            <img src="img/item4/item4.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 3000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 3000
           </h4>
-          <p class="catalog__list__item__price-old">
+          <p class="catalog__list__item__price-old" aria-label="Старая цена">
             22500 Р.
           </p>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             15500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item5/item5.jpg" width="218" height="170" alt="">
+            <img src="img/item5/item5.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 6000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 6000
           </h4>
-          <p class="catalog__list__item__price-old">
+          <p class="catalog__list__item__price-old" aria-label="Старая цена">
             30500 Р.
           </p>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             25500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item6/item6.jpg" width="218" height="170" alt="">
+            <img src="img/item6/item6.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 2000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 2000
           </h4>
 
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             12500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item7/item7.jpg" width="218" height="170" alt="">
+            <img src="img/item7/item7.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 3000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 3000
           </h4>
-          <p class="catalog__list__item__price-old">
+          <p class="catalog__list__item__price-old" aria-label="Старая цена">
             22500 Р.
           </p>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             15500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item8/item8.jpg" width="218" height="170" alt="">
+            <img src="img/item8/item8.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 6000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 6000
           </h4>
-          <p class="catalog__list__item__price-old">
+          <p class="catalog__list__item__price-old" aria-label="Старая цена">
             30500 Р.
           </p>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             25500 Р.
           </p>
         </li>
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
-            <img src="img/item9/item9.jpg" width="218" height="170" alt="">
+            <img src="img/item9/item9.jpg" width="218" height="170" alt="Перфоратор BOSCH
+            BFG 2000">
           </p>
           <h4 class="catalog__list__item__name">
             Перфоратор BOSCH
             BFG 2000
           </h4>
-          <p class="catalog__list__item__price">
+          <p class="catalog__list__item__price" aria-label="Актуальная цена">
             12500 Р.
           </p>
         </li>
@@ -265,8 +279,8 @@
     </nav>
 
     <div class="main-footer__contacts">
-      <p class="main-footer__contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="main-footer__contacts__phone">+7 (812) 555-05-55</p>
+      <p class="main-footer__contacts__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="main-footer__contacts__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
     </div>
 
     <ul class="main-footer__links">
