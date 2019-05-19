@@ -21,7 +21,7 @@
       </div>
       <div class="main-header__favourites"><a href="#">Закладки:0</a></div>
       <div class="main-header__cart"><a href="#">Корзина:10</a></div>
-      <a class="main-header__make-order-btn" href="#">Оформить заказ</a>
+      <span><a class="main-header__make-order-btn" href="#">Оформить заказ</a></span>
     </div>
 
     <h1 class="main-header__site-title" tabindex="0">
@@ -106,7 +106,7 @@
         <li class="catalog__list__item">
           <p class="catalog__list__item__image">
             <img src="img/item1/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 3000"tabindex="0">
+            BFG 3000" tabindex="0">
           </p>
           <h4 class="catalog__list__item__name" tabindex="0">
             Перфоратор BOSCH
@@ -313,8 +313,18 @@
         Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a>
       </p>
     </div>
-
-
   </footer>
+
+  <section class="pop-up-item-in-cart">
+    <h3 class="visually-hidden" tabindex="0">
+      Сообщение об успешном добавлении товара в корзину
+    </h3>
+    <span><a href="#" aria-label="Закрыть сообщение">&#10005</a></span>
+    <p tabindex="0">
+      Товар добавлен в корзину!
+    </p>
+    <span><a class="pop-up-item-in-cart__make-order-btn" href="#">ОФОРМИТЬ ЗАКАЗ</a></span>
+    <span><a class="pop-up-item-in-cart__back-to-catalog" href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a></span>
+  </section>
 </body>
 </html>

@@ -84,3 +84,13 @@ a {
   width: 1px !important;
   overflow: hidden;
 }
+
+.pop-up-send-email {
+  width: 620px;
+  height: 430px;
+}
+
+.pop-up-send-email textarea {
+  width: 460px;
+  height: 114px;
+}

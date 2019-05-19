@@ -9,8 +9,8 @@
     <header class="main-header_gray">
 
       <div class="container_black-gray">
-        <a class="main-header__logo">
-          <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина техники Техномарт" tabindex="0">
+        <a class="main-header__logo" href="#">
+          <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина техники Техномарт">
         </a>
 
         <div class="main-header__search">
@@ -20,7 +20,7 @@
         </div>
         <div class="main-header__favourites"><a href="#">Закладки:0</a></div>
         <div class="main-header__cart"><a href="#">Корзина:0</a></div>
-        <a class="main-header__make-order-btn" href="#">Оформить заказ</a>
+        <span><a class="main-header__make-order-btn" href="#">Оформить заказ</a></span>
       </div>
 
       <h1 class="main-header__site-title" tabindex="0">
@@ -152,8 +152,27 @@
           </p>
       </div>
 
-
     </footer>
+
+  <section class="pop-up-send-email">
+    <h3 class="visually-hidden" tabindex="0">
+      Форма отправки нам сообщения
+    </h3>
+    <span><a href="#" aria-label="Уйти из формы отправки сообщения">&#10005</a></span>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label> Ваше имя: <input type="text" placeholder="Имя Фамилия"></label>
+      <label>Ваш E-mail:<input type="text" placeholder="email@example.com"></label>
+      <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <section class="pop-up-big-map">
+    <h3 class="visually-hidden" tabindex="0">
+      Модальное окно с большой картой
+    </h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1558297776954!5m2!1sen!2sru" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </section>
 
   </body>
 </html>
