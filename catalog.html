@@ -8,14 +8,12 @@
 <body>
   <header class="main-header_gray">
 
-
-
     <div class="container_black-gray">
       <a class="main-header__logo" href="index.html">
         <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина техники Техномарт">
       </a>
       <div class="main-header__search">
-        <form class="main-header__search__form" action="https://echo.htmlacademy.ru" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="site-search">Поиск</label><input type="search" id="site-search" placeholder="Поиск">
         </form>
       </div>
@@ -31,26 +29,26 @@
     </h1>
 
     <div class="main-header__contacts">
-      <p class="main-header__contacts__phone" aria-label="Наш телефон +7 (812) 555-05-55" tabindex="0">+7 (812) 555-05-55</p>
-      <p class="main-header__contacts__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" tabindex="0">
+      <p class="main-header__phone" aria-label="Наш телефон +7 (812) 555-05-55" tabindex="0">+7 (812) 555-05-55</p>
+      <p class="main-header__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" tabindex="0">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
     </div>
 
 
     <ul class="main-header__user">
-      <li class="main-header__user__current-user"><a href="#">Равшан Джамшутович</a>
-        <span class="main-header__user__logout"><a href="#" aria-label="Выйти из аккаунта"></a></span>
+      <li class="main-header__current-user"><a href="#">Равшан Джамшутович</a>
+        <span class="main-header__logout"><a href="#" aria-label="Выйти из аккаунта"></a></span>
       </li>
     </ul>
-    <ul class="main-header__user-inteface">
+    <ul class="main-header__user-interface">
       <li><a href="#">Мои заказы</a></li>
       <li><a href="#">Личный кабинет</a></li>
     </ul>
 
 
     <nav class="main-header__main-nav_black-gray">
-      <ul class="main-header__main-nav__site-nav">
+      <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="#">Каталог</a></li>
@@ -101,141 +99,141 @@
     <section class="catalog">
       <h3 class="catalog__title visually-hidden" tabindex="0">Список найденных товаров</h3>
 
-      <ul class="catalog__list">
+      <ul class="catalog-list">
 
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item1/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 3000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 3000
           </h4>
-          <p class="catalog__list__item__price-old" aria-label="Старая цена" tabindex="0">
+          <p class="catalog-item__price-old" aria-label="Старая цена" tabindex="0">
             22500 Р.
           </p>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             15500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item2/item2.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 6000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 6000
           </h4>
-          <p class="catalog__list__item__price-old" aria-label="Старая цена" tabindex="0">
+          <p class="catalog-item__price-old" aria-label="Старая цена" tabindex="0">
             30500 Р.
           </p>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             25500 Р.
           </p>
         </li>
-        <li class="catalog__list__item hover">
-          <div class="catalog__list__item__btns">
-            <a class="catalog__list__item__btns__buy" href="#">КУПИТЬ</a>
-            <a class="catalog__list__item__btns__favourites" href="#">В ЗАКЛАДКИ</a>
+        <li class="catalog-item hover">
+          <div class="catalog-item__btns">
+            <a class="catalog-item__buy-btn" href="#">КУПИТЬ</a>
+            <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
           </div>
-          <h4 class="catalog__list__item_name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 2000
           </h4>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             12500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item4/item4.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 3000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 3000
           </h4>
-          <p class="catalog__list__item__price-old" aria-label="Старая цена" tabindex="0">
+          <p class="catalog-item__price-old" aria-label="Старая цена" tabindex="0">
             22500 Р.
           </p>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             15500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item5/item5.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 6000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 6000
           </h4>
-          <p class="catalog__list__item__price-old" aria-label="Старая цена" tabindex="0">
+          <p class="catalog-item__price-old" aria-label="Старая цена" tabindex="0">
             30500 Р.
           </p>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             25500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item6/item6.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 2000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 2000
           </h4>
 
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             12500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item7/item7.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 3000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 3000
           </h4>
-          <p class="catalog__list__item__price-old" aria-label="Старая цена" tabindex="0">
+          <p class="catalog-item__price-old" aria-label="Старая цена" tabindex="0">
             22500 Р.
           </p>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             15500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item8/item8.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 6000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 6000
           </h4>
-          <p class="catalog__list__item__price-old" aria-label="Старая цена" tabindex="0">
+          <p class="catalog-item__price-old" aria-label="Старая цена" tabindex="0">
             30500 Р.
           </p>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             25500 Р.
           </p>
         </li>
-        <li class="catalog__list__item">
-          <p class="catalog__list__item__image">
+        <li class="catalog-item">
+          <p class="catalog-item__image">
             <img src="img/item9/item9.jpg" width="218" height="170" alt="Перфоратор BOSCH
             BFG 2000" tabindex="0">
           </p>
-          <h4 class="catalog__list__item__name" tabindex="0">
+          <h4 class="catalog-item__name" tabindex="0">
             Перфоратор BOSCH
             BFG 2000
           </h4>
-          <p class="catalog__list__item__price" aria-label="Актуальная цена" tabindex="0">
+          <p class="catalog-item__price" aria-label="Актуальная цена" tabindex="0">
             12500 Р.
           </p>
         </li>
@@ -243,7 +241,7 @@
     </section>
 
     <ul class="pagination">
-      <li class="pagination__item_current" ><a tabindex="0">1</a></li>
+      <li class="pagination__item pagination__item_current" ><a tabindex="0">1</a></li>
       <li class="pagination__item"><a href="#">2</a></li>
       <li class="pagination__item"><a href="#">3</a></li>
       <li class="pagination__item"><a href="#">СЛЕДУЮЩАЯ</a></li>
@@ -262,14 +260,14 @@
     </section>
   </main>
 
-  <footer class="main-footer_dark-blue">
+  <footer class="main-footer main-footer_dark-blue">
 
     <a class="main-footer__logo" href="index.html">
       <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина техники Техномарт">
     </a>
 
     <nav class="main-footer__nav">
-      <ul class="main-footer__nav__site-nav">
+      <ul class="main-footer__site-nav">
         <li><a href="#">Компания</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Каталог</a></li>
@@ -279,8 +277,8 @@
     </nav>
 
     <div class="main-footer__contacts">
-      <p class="main-footer__contacts__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" tabindex="0">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p class="main-footer__contacts__phone" aria-label="Наш телефон +7 (812) 555-05-55" tabindex="0">+7 (812) 555-05-55</p>
+      <p class="main-footer__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" tabindex="0">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="main-footer__phone" aria-label="Наш телефон +7 (812) 555-05-55" tabindex="0">+7 (812) 555-05-55</p>
     </div>
 
     <ul class="main-footer__links">
@@ -298,9 +296,9 @@
 
       <div class="main-footer__social">
         <ul>
-          <li><a class="main-footer__social__vk-btn" href="#" aria-label="Техномарт во Вконтакте"></a></li>
-          <li><a class="main-footer__social__fb-btn" href="#" aria-label="Техномарт в Фейсбуке"></a></li>
-          <li><a class="main-footer__social__insta-btn" href="#" aria-label="Техномарт в Интаграме"></a></li>
+          <li><a class="main-footer__vk-social-btn" href="#" aria-label="Техномарт во Вконтакте"></a></li>
+          <li><a class="main-footer__fb-social-btn" href="#" aria-label="Техномарт в Фейсбуке"></a></li>
+          <li><a class="main-footer__insta-social-btn" href="#" aria-label="Техномарт в Интаграме"></a></li>
         </ul>
       </div>
 

@@ -36,15 +36,15 @@ a {
   content: url("../img/icons/icon-cart.svg");
 }
 
-.main-header__contacts__phone::before {
+.main-header__phone::before {
   content: url("../img/icons/icon-phone.svg");
 }
 
-.main-header__user__current-user a::before {
+.main-header__current-user a::before {
   content: url("../img/icons/icon-user.svg");
 }
 
-.main-header__user__logout a::before {
+.main-header__logout a::before {
   content: url("../img/icons/icon-login.svg");
 }
 
@@ -72,15 +72,15 @@ a {
   border-radius: 50%;
 }
 
-.main-footer__social__vk-btn {
+.main-footer__vk-social-btn {
   background: url("../img/icons/icon-vk.svg") no-repeat center;
 }
 
-.main-footer__social__fb-btn {
+.main-footer__fb-social-btn {
   background: url("../img/icons/icon-fb.svg") no-repeat center;
 }
 
-.main-footer__social__insta-btn {
+.main-footer__insta-social-btn {
   background: url("../img/icons/icon-insta.svg") no-repeat center;
 }
 
