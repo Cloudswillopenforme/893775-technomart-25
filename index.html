@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="css/styles.css">
+
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header class="main-header_gray">
@@ -18,8 +21,8 @@
             <label class="visually-hidden" for="site-search">Поиск по сайту</label><input type="search" id="site-search" placeholder="Поиск">
           </form>
         </div>
-        <div class="main-header__favourites"><a href="#">Закладки:0</a></div>
-        <div class="main-header__cart"><a href="#">Корзина:0</a></div>
+        <div class="main-header__favourites"><a href="#">Закладки: 0</a></div>
+        <div class="main-header__cart"><a href="#">Корзина: 0</a></div>
         <span><a class="main-header__make-order-btn" href="#">Оформить заказ</a></span>
       </div>
 
@@ -43,7 +46,7 @@
       </ul>
 
 
-      <nav class="main-header__main-nav_black-gray">
+      <nav class="cite-nav">
         <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -62,7 +65,7 @@
       <!--there will be the content of the red area-->
 
       <section class="company-info">
-        <h3 class="company-info__title" tabindex="0">КОМПАНИЯ «Техномарт»</h3>
+        <h3 class="company-info__title" tabindex="0">КОМПАНИЯ «ТЕХНОМАРТ»</h3>
         <p tabindex="0">
           Настоящий мужской шоппинг начинается здесь!
           Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -73,9 +76,9 @@
         </p>
 
         <ul class="company-info__delivery-services">
-          <li tabindex="0">Деловые линии</li>
-          <li tabindex="0">Автотрейдинг</li>
-          <li tabindex="0">ЖелДорЭкспедиция</li>
+          <li tabindex="0"><span class="indicator"></span>Деловые линии</li>
+          <li tabindex="0"><span class="indicator"></span>Автотрейдинг</li>
+          <li tabindex="0"><span class="indicator"></span>ЖелДорЭкспедиция</li>
         </ul>
 
         <a class="company-info__button button" href="#">Подробнее о компании</a>
@@ -163,7 +166,9 @@
       <label> Ваше имя: <input type="text" placeholder="Имя Фамилия"></label>
       <label>Ваш E-mail:<input type="text" placeholder="email@example.com"></label>
       <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
-      <button type="submit">Отправить</button>
+      <div class="container_light-gray">
+        <button class="button" type="submit">Отправить</button>
+      </div>
     </form>
   </section>
 
@@ -171,6 +176,7 @@
     <h3 class="visually-hidden" tabindex="0">
       Модальное окно с большой картой
     </h3>
+    <span><a href="#" aria-label="Уйти с большой карты">&#10005</a></span>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1558297776954!5m2!1sen!2sru" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 
