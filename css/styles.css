@@ -39,10 +39,6 @@ a {
   background-color: #293449;
 }
 
-.main-header__make-order-btn {
-  background-color: #63a63e;
-}
-
 .main-header__search form::before {
    content: url("../img/icons/icon-search.svg");
  }
@@ -64,9 +60,18 @@ a {
 
 .main-header__favourites a,
 .main-header__cart a,
-.main-header__make-order-btn,
+.button-green,
 .cite-nav a {
   color: #ffffff;
+}
+
+.catalog-item__favourites-btn {
+  color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 3px #63a63e;
 }
 
 .main-header__favourites a:hover,
@@ -75,8 +80,8 @@ a {
   background-color: #212a3a;
 }
 
-.main-header__make-order-btn:hover {
-  background-color: #5fbb2d;
+.catalog-item__favourites-btn:hover {
+  border: solid 3px #000000;
 }
 
 .main-header__favourites a:active,
@@ -85,9 +90,10 @@ a {
   background-color: #161d29;
 }
 
-.main-header__make-order-btn:active {
-  color: rgba(255, 255, 255, 0.5);
-  background-color: #518534;
+.catalog-item__favourites-btn:active {
+  color: rgb(50, 66, 92);
+  opacity: 0.3;
+  border: solid 3px #32425c;
 }
 
 .main-header__auth a,
@@ -195,7 +201,33 @@ a {
 }
 
 
+/*MAIN INDEX*/
+.company-info__title,
+.contacts__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+}
 
+.company-info p,
+.contacts p {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.company-info__delivery-services {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
+}
+
+.indicator {
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  display: inline-block;
+}
 
 /*MAIN INNER*/
 .breadcrumbs {
@@ -211,8 +243,8 @@ a {
 }
 
 .breadcrumbs li:first-child a::before {
-   content: url("../img/icons/icon-home.svg");
- }
+  content: url("../img/icons/icon-home.svg");
+}
 
 .page-title {
   font-size: 30px;
@@ -247,16 +279,12 @@ a {
   line-height: 20px;
 }
 
-.button-blank,
-a.button-blank{
-  font-family: "PTSans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
 .catalog-list {
   list-style: none;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item__name {
@@ -308,39 +336,10 @@ a.button-blank{
   line-height: 24px;
 }
 
-  /*add NEW picture*/
+/*BUTTONS*/
 
-
-/*MAIN INDEX*/
-.company-info__title,
-.contacts__title {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: normal;
-}
-
-.company-info p,
-.contacts p {
-  font-family: "PTSans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.company-info__delivery-services {
-  font-size: 18px;
-  line-height: 20px;
-  list-style: none;
-}
-
-.indicator {
-  width: 25px;
-  height: 2px;
-  background-color: #ee3643;
-  display: inline-block;
-}
-
-.button,
-a.button {
+.button-red,
+.button-red a {
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
@@ -358,7 +357,43 @@ a.button {
 }
 
 
+.button-blank,
+.button-blank a{
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 1px #e5e5e5;
+}
 
+.button-blank:hover {
+  border-color: #bdc6ca;
+}
+
+.button-blank:active{
+  border-color: #ee3643;
+}
+
+
+.button-green {
+  background-color: #63a63e;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-green:hover {
+  background-color: #5fbb2d;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
+
+/*FOOTER*/
 .main-footer_dark-blue {
   background-color: #32425c;
 }
@@ -390,6 +425,7 @@ a.button {
 .main-footer__nav a:active,
 .main-footer__links a:active {
   color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
 }
 
 .main-footer__contacts {
@@ -448,11 +484,19 @@ a.button {
 }
 
 /*POPUPS*/
+.pop-up {
+  width: 620px;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
 .container_light-gray {
   background-color: #e5e5e5;
 }
 
 .pop-up-send-email {
+  height: 430px;
+
   font-size: 18px;
   line-height: 18px;
 }
@@ -465,18 +509,12 @@ a.button {
   color: #a9a9a9;
 }
 
-.pop-up-send-email {
-  width: 620px;
-  height: 430px;
-}
-
 .pop-up-send-email textarea {
   width: 460px;
   height: 114px;
 }
 
 .pop-up-item-in-cart {
-  width: 620px;
   height: 282px;
 }
 
