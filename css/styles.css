@@ -16,28 +16,8 @@ a {
   text-decoration: none;
 }
 
-/*TEMORARILY*/
-/*body > * {*/
-  /*background-color: rgba(255, 0, 0, 0.5)!important;*/
-  /*outline: 2px solid red;*/
-/*}*/
-/*body > * > * {*/
-  /*background-color: rgba(255, 255, 0, 0.5);*/
-  /*outline: 2px solid yellow;*/
-/*}*/
-
-/*body > * > * > * {*/
-  /*background-color: rgba(0, 0, 255, 0.5);*/
-  /*outline: 2px solid blue;*/
-/*}*/
-
-/*body > * > * > * > * {*/
-  /*background-color: rgba(0, 255, 255, 0.4);*/
-  /*outline: 2px solid green;*/
-/*}*/
-
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding:0 !important;
