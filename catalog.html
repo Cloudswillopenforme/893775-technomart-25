@@ -9,7 +9,7 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header_gray">
+  <header class="main-header_light-gray">
 
     <div class="container_black-gray">
         <div class="container_center">
@@ -69,17 +69,21 @@
 
   </header>
 
-  <main class="container">
-    <ul class="breadcrumbs">
-      <li><a href="index.html" aria-label="На главную страницу"></a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li class="breadcrumbs-current">Перфораторы</li>
-    </ul>
+  <main>
+    <div class="container_center">
+      <ul class="breadcrumbs">
+        <li><a href="index.html" aria-label="На главную страницу"></a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li class="breadcrumbs-current">Перфораторы</li>
+      </ul>
 
-    <h2 class="page-title">
+      <h2 class="page-title">
       ПЕРФОРАТОРЫ
-    </h2>
+      </h2>
+    <!--</div>-->
+
+    <!--<div class="container_center">-->
 
     <section class="filter-set">
 
@@ -149,174 +153,180 @@
       </form>
     </section>
 
-    <section class="sorting">
-      <h3>СОРТИРОВКА:</h3>
+      <div class="container">
+        <section class="sorting">
+          <h3>СОРТИРОВКА:</h3>
 
-      <!--there will be the content of the red area-->
+          <!--there will be the content of the red area-->
+        </section>
+
+        <section class="catalog">
+          <h3 class="catalog__title visually-hidden">Список найденных товаров</h3>
+
+          <ul class="catalog-list">
+
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item1/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 3000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 3000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                22500 Р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                15500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item2/item2.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 6000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 6000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                30500 Р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                25500 Р.
+              </p>
+            </li>
+            <li class="catalog-item hover">
+              <div class="catalog-item__btns">
+                <a class="catalog-item__buy-btn button-green" href="#">КУПИТЬ</a>
+                <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 2000
+              </h4>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                12500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item4/item4.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 3000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 3000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                22500 Р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                15500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item5/item5.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 6000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 6000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                30500 Р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                25500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item6/item6.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 2000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 2000
+              </h4>
+
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                12500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item7/item7.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 3000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 3000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                22500 Р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                15500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item8/item8.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 6000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 6000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                30500 Р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                25500 Р.
+              </p>
+            </li>
+            <li class="catalog-item">
+              <p class="catalog-item__image">
+                <img src="img/item9/item9.jpg" width="218" height="170" alt="Перфоратор BOSCH
+                BFG 2000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BOSCH
+                BFG 2000
+              </h4>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                12500 Р.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <ul class="pagination">
+          <li class="pagination__item pagination__item_current button-red"><a>1</a></li>
+          <li class="pagination__item button-blank"><a href="#">2</a></li>
+          <li class="pagination__item button-blank"><a href="#">3</a></li>
+          <li class="pagination__item button-blank"><a href="#">СЛЕДУЮЩАЯ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product-info_light-gray">
+      <div class="container_center">
+        <h2>
+          ПАРА СЛОВ О ПЕРФОРАТОРАХ
+        </h2>
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы.
+          Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
+      </div>
     </section>
 
-    <section class="catalog">
-      <h3 class="catalog__title visually-hidden">Список найденных товаров</h3>
-
-      <ul class="catalog-list">
-
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item1/item1.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 3000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 3000
-          </h4>
-          <p class="catalog-item__price-old" aria-label="Старая цена">
-            22500 Р.
-          </p>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            15500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item2/item2.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 6000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 6000
-          </h4>
-          <p class="catalog-item__price-old" aria-label="Старая цена">
-            30500 Р.
-          </p>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            25500 Р.
-          </p>
-        </li>
-        <li class="catalog-item hover">
-          <div class="catalog-item__btns">
-            <a class="catalog-item__buy-btn button-green" href="#">КУПИТЬ</a>
-            <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
-          </div>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 2000
-          </h4>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            12500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item4/item4.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 3000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 3000
-          </h4>
-          <p class="catalog-item__price-old" aria-label="Старая цена">
-            22500 Р.
-          </p>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            15500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item5/item5.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 6000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 6000
-          </h4>
-          <p class="catalog-item__price-old" aria-label="Старая цена">
-            30500 Р.
-          </p>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            25500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item6/item6.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 2000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 2000
-          </h4>
-
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            12500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item7/item7.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 3000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 3000
-          </h4>
-          <p class="catalog-item__price-old" aria-label="Старая цена">
-            22500 Р.
-          </p>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            15500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item8/item8.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 6000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 6000
-          </h4>
-          <p class="catalog-item__price-old" aria-label="Старая цена">
-            30500 Р.
-          </p>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            25500 Р.
-          </p>
-        </li>
-        <li class="catalog-item">
-          <p class="catalog-item__image">
-            <img src="img/item9/item9.jpg" width="218" height="170" alt="Перфоратор BOSCH
-            BFG 2000">
-          </p>
-          <h4 class="catalog-item__name">
-            Перфоратор BOSCH
-            BFG 2000
-          </h4>
-          <p class="catalog-item__price" aria-label="Актуальная цена">
-            12500 Р.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <ul class="pagination">
-      <li class="pagination__item pagination__item_current button-red"><a>1</a></li>
-      <li class="pagination__item button-blank"><a href="#">2</a></li>
-      <li class="pagination__item button-blank"><a href="#">3</a></li>
-      <li class="pagination__item button-blank"><a href="#">СЛЕДУЮЩАЯ</a></li>
-    </ul>
-
-    <section class="product-info">
-      <h2>
-        ПАРА СЛОВ О ПЕРФОРАТОРАХ
-      </h2>
-      <p>
-        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-        Существуют электромеханические и пневматические перфораторы.
-        Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
-        В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-      </p>
-    </section>
   </main>
 
   <footer class="main-footer_dark-blue">
@@ -335,9 +345,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-    </div>
 
-    <div class="container_center">
       <div class="main-footer__contacts">
         <p class="main-footer__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="main-footer__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
@@ -383,7 +391,7 @@
     <h3 class="visually-hidden">
       Сообщение об успешном добавлении товара в корзину
     </h3>
-    <span><a href="#" aria-label="Закрыть сообщение">&#10005;</a></span>
+    <span class="pop-up__cross"><a href="#" aria-label="Закрыть сообщение">&#10005;</a></span>
     <p>
       Товар добавлен в корзину!
     </p>
