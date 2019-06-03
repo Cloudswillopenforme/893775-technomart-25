@@ -43,14 +43,16 @@
 
 
       <div class="main-header__auth">
-        <p class="main-header__current-user"><a href="#">Равшан Джамшутович</a>
+        <div class="main-header__current-user"><a href="#">Равшан Джамшутович</a>
           <span class="main-header__logout"><a href="#" aria-label="Выйти из аккаунта"></a></span>
-        </p>
-        <ul class="main-header__user-interface">
-          <li><a href="#">Мои заказы</a></li>
-          <li><span class="dot"></span></li>
-          <li><a href="#">Личный кабинет</a></li>
-        </ul>
+        </div>
+        <div>
+          <ul class="main-header__user-interface">
+            <li><a href="#">Мои заказы</a></li>
+            <li><span class="dot"></span></li>
+            <li><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -332,31 +334,35 @@
   <footer class="main-footer_dark-blue">
 
     <div class="container_center">
-      <a class="main-footer__logo">
-        <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина техники Техномарт">
-      </a>
+      <div class="container">
+        <a class="main-footer__logo">
+          <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина техники Техномарт">
+        </a>
 
-      <nav class="main-footer__nav">
-        <ul class="main-footer__site-nav">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-
-      <div class="main-footer__contacts">
-        <p class="main-footer__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="main-footer__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
+        <nav class="main-footer__nav">
+          <ul class="main-footer__site-nav">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <ul class="main-footer__links">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложение</a></li>
-      </ul>
+      <div class="container">
+        <div class="main-footer__contacts">
+          <p class="main-footer__address" aria-label="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="main-footer__phone" aria-label="Наш телефон +7 (812) 555-05-55">+7 (812) 555-05-55</p>
+        </div>
+
+        <ul class="main-footer__links">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложение</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="container_black-gray">
