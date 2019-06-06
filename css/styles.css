@@ -448,21 +448,33 @@ input[type="radio"].visually-hidden {
 
 
 /*MAIN INDEX*/
-.company-info {
-  padding: 0 60px 0 0;
+
+main .container_center:last-of-type {
+  justify-content: space-between;
   margin-bottom: 85px;
+}
+
+.company-info {
+  padding: 2px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
   width: 580px;
 }
 .contacts {
-  padding: 0 60px 0 0;
-  margin-bottom: 85px;
-  width: 360px;
+  padding: 2px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 .company-info__title,
 .contacts__title {
-  margin: 0;
-  padding: 0 0 38px 0;
+  margin: 0 0 28px;
+  padding: 0;
 
   font-size: 30px;
   line-height: 30px;
@@ -475,36 +487,66 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   font-family: "PTSans", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
-  word-spacing: -2px;
+  /*word-spacing: -2px;*/
 }
 
-.company-info p:nth-of-type(1),
+.company-info p:nth-of-type(1) {
+  margin-bottom: 27px;
+}
+
+.company-info p:nth-of-type(2) {
+  margin-bottom: 21px;
+}
+
 .contacts p {
-  padding: 0 0 36px 0;
+  margin-bottom: 32px;
 }
 
 .company-info__delivery-services {
+  padding: 0 0 0 44px;
+  margin: 0 0 30px;
+
   font-size: 18px;
-  line-height: 20px;
+  line-height: 35px;
+  vertical-align: top;
   list-style: none;
 }
 
+.company-info__delivery-services li {
+  position: relative;
+}
+
+.company-info__delivery-services li::before {
+  position: absolute;
+  display: block;
+
+  width: 25px;
+  height: 2px;
+
+  top: 16px;
+  left: -40px;
+
+  content: "";
+  font-size: inherit;
+  background-color: #ee3643;
+ }
+
+/*.contacts__map {*/
+  /*margin-bottom: 34px;*/
+/*}*/
+
 .company-info__button {
+  padding: 11px 0 10px 0;
+  margin-top: auto;
   width: 220px;
 }
 
 .contacts__send-email-btn {
+  padding: 11px 0 10px 0;
+  margin-top: auto;
   width: 300px;
-}
-
-.indicator {
-  display: inline-block;
-  vertical-align: central;
-  width: 25px;
-  height: 2px;
-  background-color: #ee3643;
 }
 
 
@@ -860,7 +902,7 @@ main .container {
   text-align: center;
   text-transform: uppercase;
   background-color: #ee3643;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .button-red:hover,
@@ -886,7 +928,7 @@ main .container {
   text-transform: uppercase;
   background-color: #ffffff;
   border: solid 1px #e5e5e5;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .button-blank:hover {
@@ -906,7 +948,7 @@ main .container {
   line-height: 18px;
   text-align: center;
   background-color: #63a63e;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .button-green:hover {
