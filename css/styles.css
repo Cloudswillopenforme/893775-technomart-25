@@ -1437,12 +1437,22 @@ main .container {
 .pop-up-send-email input {
   width: 220px;
   height: 38px;
-  border: solid 2px #dee3e4;
 }
+
+.pop-up-send-email textarea {
+   /*check font!!*/
+   /*font-family: "PTSans", Arial, sans-serif; */
+   padding-top: 10px;
+   width: 460px;
+   height: 114px;
+ }
 
 .pop-up-send-email input,
 .pop-up-send-email textarea {
   margin-top: 10px;
+  border: solid 2px #dee3e4;
+  border-radius: 3px;
+  outline: none;
 }
 
 .pop-up-send-email input::placeholder,
@@ -1454,14 +1464,18 @@ main .container {
   color: #a9a9a9;
 }
 
-.pop-up-send-email textarea {
-  /*check font!!*/
-  /*font-family: "PTSans", Arial, sans-serif; */
-  padding-top: 10px;
-  width: 460px;
-  height: 114px;
-  border: solid 2px #dee3e4;
+
+.pop-up-send-email input:hover,
+.pop-up-send-email textarea:hover {
+  border-color: #b5b5b5;
 }
+
+.pop-up-send-email input:focus,
+.pop-up-send-email textarea:focus {
+  border-color: #ee3643;
+}
+
+
 
 .send-email-btn {
   padding: 11px 0 10px 0;
