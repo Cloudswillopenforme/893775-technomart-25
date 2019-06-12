@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/script.js" async></script>
   </head>
   <body class="main-page">
     <header class="main-header_light-gray">
@@ -109,12 +110,12 @@
           </p>
 
           <div class="contacts__map">
-            <a class="contacts__map-big" href="#">
+            <a class="contacts__map-big open-modal" data-modal="pop-up-big-map" href="#">
               <img src="img/map/map.jpg" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Нажми, чтобы открыть большую карту">
             </a>
           </div>
 
-          <a class="contacts__send-email-btn button-red" href="#">Заблудились? Напишите нам!</a>
+          <a class="contacts__send-email-btn button-red open-modal" data-modal="pop-up-send-email" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -183,7 +184,7 @@
 
     </footer>
 
-  <section class="pop-up-send-email pop-up">
+  <section class="pop-up-send-email pop-up visually-hidden">
 
     <div class="wrap_center">
       <h3 class="visually-hidden">
@@ -205,7 +206,7 @@
 
   </section>
 
-  <section class="pop-up-big-map pop-up">
+  <section class="pop-up-big-map pop-up visually-hidden">
     <h3 class="visually-hidden">
       Модальное окно с большой картой
     </h3>

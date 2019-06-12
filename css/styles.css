@@ -1354,6 +1354,7 @@ main .container {
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 100;
 }
 
 .pop-up__close {
@@ -1403,7 +1404,6 @@ main .container {
 }
 
 .pop-up-send-email {
-  display: none;
   padding: 0;
 
   font-size: 18px;
@@ -1471,7 +1471,6 @@ main .container {
 }
 
 .pop-up-big-map {
-  display: none;
   margin-left: -470px;
 
   width: 940px;
@@ -1483,7 +1482,6 @@ main .container {
 }
 
 .pop-up-item-in-cart {
-  display: none;
   font-size: 30px;
   line-height: 30px;
 }
