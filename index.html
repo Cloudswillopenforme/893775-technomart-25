@@ -8,18 +8,24 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main-page">
     <header class="main-header_light-gray">
 
       <div class="container_black-gray">
         <div class="container_center">
-          <a class="main-header__logo" href="#">
+          <a class="main-header__logo">
             <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина техники Техномарт">
           </a>
 
-          <div class="main-header__search">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="site-search">Поиск по сайту</label><input type="search" id="site-search" placeholder="Поиск">
+          <div>
+            <form class="main-header__search" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" id="site-search" placeholder="Поиск:" aria-label="Поиск по сайту">
+              <button class="main-header__search-button" type="submit">
+                <svg width="17" height="17">
+                  <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" fill="#ffffff"></path>
+                </svg>
+                <span class="visually-hidden">Искать</span>
+              </button>
             </form>
           </div>
           <div class="main-header__favourites"><a href="#">Закладки: 0</a></div>
@@ -44,7 +50,13 @@
 
 
         <ul class="main-header__auth">
-          <li class="main-header__login"><a href="#">Войти</a></li>
+          <li class="main-header__login"><a href="#">
+            <svg width="20" height="17">
+              <path d="M14.875 8.5L6 0v6H0v5h6v6z" fill="#c5c5c5"></path>
+              <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" fill="#c5c5c5"></path>
+            </svg>
+            Войти
+          </a></li>
           <li class="main-header__signup"><a href="#">Регистрация</a></li>
         </ul>
       </div>
@@ -119,7 +131,7 @@
             <ul class="main-footer__site-nav">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
-              <li><a href="#">Каталог</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
@@ -177,7 +189,7 @@
       <h3 class="visually-hidden">
         Форма отправки нам сообщения
       </h3>
-      <span class="pop-up__cross"><a href="#" aria-label="Уйти из формы отправки сообщения"></a></span>
+      <button class="pop-up__close">Закрыть</button>
 
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="wrap">
@@ -197,7 +209,7 @@
     <h3 class="visually-hidden">
       Модальное окно с большой картой
     </h3>
-    <span class="pop-up__cross"><a href="#" aria-label="Уйти с большой карты"></a></span>
+    <button class="pop-up__close">Закрыть</button>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1558297776954!5m2!1sen!2sru" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
 
