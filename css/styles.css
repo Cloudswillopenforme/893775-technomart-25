@@ -1491,6 +1491,10 @@ main .container {
   border: none;
 }
 
+.pop-up-big-map iframe {
+  border: none;
+}
+
 .pop-up-item-in-cart .wrap_center {
   padding: 24px 0 32px 80px;
 }
