@@ -3,11 +3,12 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <script src="js/script.js" async></script>
+
   </head>
   <body class="main-page">
     <header class="main-header_light-gray">
@@ -37,8 +38,8 @@
 
       <div class="container_center">
         <h1 class="main-header__site-title">
-          Интернет-магазин <br>
-          строительных материалов <br>
+          Интернет-магазин
+          строительных материалов
           и инструментов для ремонта
         </h1>
 
@@ -80,6 +81,175 @@
 
       <!--there will be the content of the red area-->
       <div class="container_center">
+        <section class="promo">
+          <h3 class="promo__title visually-hidden">ПРОМО АКЦИИ МАГАЗИНА ТЕХНОМАРТ</h3>
+
+          <div class="promo-wrap_horizontal">
+            <div class="promo__item promo__item-material">
+              <h4 class="promo__item-title">
+                Материалы
+              </h4>
+              <a class="promo__item-btn" href="#">
+                на любой вкус
+              </a>
+            </div>
+            <div class="promo__item promo__item-tools">
+              <h4 class="promo__item-title">
+                Инструмент
+              </h4>
+              <a class="promo__item-btn" href="#">
+                НА ВСЕ СЛУЧАИ
+              </a>
+            </div>
+            <div class="promo__item promo__item-techs">
+              <h4 class="promo__item-title">
+                Техника
+              </h4>
+              <a class="promo__item-btn" href="#">
+                для стройки
+              </a>
+            </div>
+          </div>
+
+          <div class="promo-wrap_horizontal">
+            <div class="promo__slider">
+              <ul class="promo__slider-list">
+                <li class="promo__slider-item promo__slider-item-1">
+                  <h3 class="promo__slider-title">Дрели</h3>
+                  <p class="promo__slider-comment">Соседям на радость!</p>
+                  <a class="promo__slider-btn button-red" href="catalog.html">Открыть каталог</a>
+                </li>
+                <li class="promo__slider-item promo__slider-item-2 visually-hidden">
+                  <h3 class="promo__slider-title">Перфораторы</h3>
+                  <p class="promo__slider-comment">Настоящие мужские игрушки</p>
+                  <a class="promo__slider-btn button-red" href="catalog.html">Открыть каталог</a>
+                </li>
+              </ul>
+            </div>
+            <div class="promo-wrap_vertical">
+              <div class="promo__item promo__item-sales">
+
+                <h4 class="promo__item-title">
+                  Скидки 50%
+                </h4>
+                <a class="promo__item-btn" href="#">
+                  На 350 ТОВАРОВ
+                </a>
+              </div>
+              <div class="promo__item promo__item-delivery">
+                <h4 class="promo__item-title">
+                  Доставка
+                </h4>
+                <a class="promo__item-btn" href="#">
+                  бесплатно
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="popular-items">
+
+          <div class="page-header">
+            <h2 class="page-header__title">Популярные товары:</h2>
+            <a class="page-header__btn button-red" href="#">Все популярные товары</a>
+          </div>
+
+          <ul class="popular-items catalog-list">
+
+            <li class="catalog-item">
+              <div class="flag-new visually-hidden">Новинка</div>
+              <div class="catalog-item__btns">
+                <a class="catalog-item__buy-btn open-modal button-green" data-modal="pop-up-item-in-cart" href="#">КУПИТЬ</a>
+                <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <p class="catalog-item__image">
+                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор Bosch BFG 9000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                32500 р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                25500 р.
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <div class="flag-new visually-hidden">Новинка</div>
+              <div class="catalog-item__btns">
+                <a class="catalog-item__buy-btn open-modal button-green" data-modal="pop-up-item-in-cart" href="#">КУПИТЬ</a>
+                <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <p class="catalog-item__image">
+                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор BBosch BFG 3000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                22500 р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                15500 р.
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <div class="flag-new visually-hidden">Новинка</div>
+              <div class="catalog-item__btns">
+                <a class="catalog-item__buy-btn open-modal button-green" data-modal="pop-up-item-in-cart" href="#">КУПИТЬ</a>
+                <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <p class="catalog-item__image">
+                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор Bosch BFG 6000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+                30500 р.
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                25500 р.
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <div class="flag-new">Новинка</div>
+              <div class="catalog-item__btns">
+                <a class="catalog-item__buy-btn open-modal button-green" data-modal="pop-up-item-in-cart" href="#">КУПИТЬ</a>
+                <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
+              </div>
+              <p class="catalog-item__image">
+                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+              </p>
+              <h4 class="catalog-item__name">
+                Перфоратор Bosch BFG 2000
+              </h4>
+              <p class="catalog-item__price-old" aria-label="Старая цена">
+
+              </p>
+              <p class="catalog-item__price" aria-label="Актуальная цена">
+                12500 р.
+              </p>
+            </li>
+
+
+          </ul>
+        </section>
+
+        <section class="popular-manufacturers">
+
+          <div class="page-header">
+            <h2 class="page-header__title">Популярные Производители:</h2>
+            <a class="page-header__btn button-red" href="#">все производители</a>
+          </div>
+
+        </section>
+
         <section class="company-info">
           <h3 class="company-info__title">КОМПАНИЯ «ТЕХНОМАРТ»</h3>
           <p>
@@ -87,7 +257,7 @@
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
 
@@ -105,17 +275,17 @@
           <h3 class="contacts__title">КОНТАКТЫ</h3>
 
           <p>
-            Вы можете забрать товар сами, <br>
+            Вы можете забрать товар сами,
             заехав в наш офис:
           </p>
 
           <div class="contacts__map">
-            <a class="contacts__map-big open-modal" data-modal="pop-up-big-map" href="#">
+            <a class="contacts__map-big open-modal" data-modal="pop-up-big-map" href="https://goo.gl/maps/7CGMzYDQMEUcTbDw5">
               <img src="img/map/map.jpg" alt="Мы находимся по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Нажми, чтобы открыть большую карту">
             </a>
           </div>
 
-          <a class="contacts__send-email-btn button-red open-modal" data-modal="pop-up-send-email" href="#">Заблудились? Напишите нам!</a>
+          <a class="contacts__send-email-btn button-red open-modal" data-modal="pop-up-send-email" href="writeus.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -177,7 +347,7 @@
             </p>
 
             <p class="main-footer__develop">
-              Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+              Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
         </div>
       </div>
@@ -213,6 +383,6 @@
     <button class="pop-up__close">Закрыть</button>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1558297776954!5m2!1sen!2sru" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
   </section>
-
+    <script src="js/script.js" async></script>
   </body>
 </html>

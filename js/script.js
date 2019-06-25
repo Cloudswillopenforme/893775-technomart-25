@@ -1,6 +1,7 @@
 //open modals
 document.body.addEventListener("click", (e) => {
   let btnSendEmail = e.target.closest('.open-modal');
+  e.preventDefault();
 
   if (!btnSendEmail) return;
 
@@ -11,6 +12,7 @@ document.body.addEventListener("click", (e) => {
 
 document.body.addEventListener("click", (e) => {
   let close = e.target.closest('.pop-up__close');
+  e.preventDefault();
 
   if (!close) return;
 
