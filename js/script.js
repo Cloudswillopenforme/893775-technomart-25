@@ -1,22 +1,22 @@
 //open modals
 document.body.addEventListener("click", (e) => {
-  let btnSendEmail = e.target.closest('.open-modal');
-  e.preventDefault();
+  var btnSendEmail = e.target.closest('.open-modal');
 
   if (!btnSendEmail) return;
 
-  let modal = btnSendEmail.dataset.modal;
+  e.preventDefault();
+  var modal = btnSendEmail.dataset.modal;
 
   openModal(modal);
 });
 
 document.body.addEventListener("click", (e) => {
-  let close = e.target.closest('.pop-up__close');
-  e.preventDefault();
+  var close = e.target.closest('.pop-up__close');
 
   if (!close) return;
 
-  let modal = e.target.closest('.pop-up');
+  e.preventDefault();
+  var modal = e.target.closest('.pop-up');
 
   closeModal(modal);
 });

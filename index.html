@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7cPT+Sans:400,700&display=swap&subset=cyrillic">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
@@ -155,7 +155,7 @@
             <a class="page-header__btn button-red" href="#">Все популярные товары</a>
           </div>
 
-          <ul class="popular-items catalog-list">
+          <ul class="popular-items-list catalog-list">
 
             <li class="catalog-item">
               <div class="flag-new visually-hidden">Новинка</div>
@@ -164,7 +164,7 @@
                 <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
               </div>
               <p class="catalog-item__image">
-                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+                <img src="img/popular-items/item-image-1.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
                 Перфоратор Bosch BFG 9000
@@ -184,7 +184,7 @@
                 <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
               </div>
               <p class="catalog-item__image">
-                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+                <img src="img/popular-items/item-image-2.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
                 Перфоратор BBosch BFG 3000
@@ -204,7 +204,7 @@
                 <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
               </div>
               <p class="catalog-item__image">
-                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+                <img src="img/popular-items/item-image-3.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
                 Перфоратор Bosch BFG 6000
@@ -224,7 +224,7 @@
                 <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
               </div>
               <p class="catalog-item__image">
-                <img src="img/item1/item1.jpg" width="216" height="170" alt="Bosch BFG 9000">
+                <img src="img/popular-items/item-image-4.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
                 Перфоратор Bosch BFG 2000
@@ -248,8 +248,90 @@
             <a class="page-header__btn button-red" href="#">все производители</a>
           </div>
 
+            <div class="manufacturers">
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/bosch.png" alt="Производитель Bosch" width="126" height="37">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/makita.png" alt="Производитель Makita" width="123" height="40">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/de-walt.png" alt="Производитель DeWALT" width="146" height="44">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/interskol.png" alt="Производитель Интерскол" width="200" height="88">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/hitachi.png" alt="Производитель Hitachi" width="169" height="31">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/lg.png" alt="Производитель LG" width="121" height="73">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/aeg.png" alt="Производитель AEG" width="151" height="96">
+              </a>
+              <a class="manufacturers__item" href="#">
+                <img src="img/manufacturers/metabo.png" alt="Производитель Metabo" width="204" height="69">
+              </a>
+            </div>
+
+        </section>
+      </div>
+
+        <section class="services services_light-gray">
+          <div class="container_center">
+
+            <div>
+              <h2 class="services__title">Сервисы</h2>
+             <p class="services__comment">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            </div>
+
+            <div class="tab-slider">
+              <div class="tab-slider__tab-controls">
+                <button class="tab-slider__tab-controls-btn active" type="button">Доставка</button>
+                <button class="tab-slider__tab-controls-btn" type="button">Гарантия</button>
+                <button class="tab-slider__tab-controls-btn" type="button">Кредит</button>
+              </div>
+
+              <ul class="tab-slider__tabs">
+                <li class="tab-slider__tabs_delivery">
+                  <h3 class="tab-slider__tab-title">Доставка</h3>
+
+                  <p class="tab-slider__tab-content">
+                    Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!
+                  </p>
+                </li>
+
+                <li class="tab-slider__tabs_guarantee" hidden>
+                  <h3 class="tab-slider__tab-title">Гарантия</h3>
+
+                  <p class="tab-slider__tab-content">
+                    Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.
+                  </p>
+                </li>
+
+                <li class="tab-slider__tabs_credit" hidden>
+                  <h3 class="tab-slider__tab-title">Кредит</h3>
+
+                  <p class="tab-slider__tab-content">
+                    Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <a class="tab-slider__tab-content-btn" href="#">Отправить заявку</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
         </section>
 
+  <div class="container_center">
+        <div class="container">
         <section class="company-info">
           <h3 class="company-info__title">КОМПАНИЯ «ТЕХНОМАРТ»</h3>
           <p>
@@ -287,6 +369,7 @@
 
           <a class="contacts__send-email-btn button-red open-modal" data-modal="pop-up-send-email" href="writeus.html">Заблудились? Напишите нам!</a>
         </section>
+        </div>
       </div>
     </main>
 
