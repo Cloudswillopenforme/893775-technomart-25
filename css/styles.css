@@ -1820,6 +1820,7 @@ input[type='radio'].visually-hidden
 .filters-form__checkbox-container input:focus + .filters-form__checkbox,
 .filters-form__radio-container input:focus + .filters-form__radio
 {
+  -webkit-box-shadow: 0 0 0 3px rgb(0, 123, 255);
   box-shadow: 0 0 0 3px rgb(0, 123, 255);
 }
 
@@ -2821,6 +2822,42 @@ input[type='radio'].visually-hidden
 }
 
 
+.pop-up-send-email input::-webkit-input-placeholder,
+.pop-up-send-email textarea::-webkit-input-placeholder
+{
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+
+
+  color: #a9a9a9;
+}
+
+
+.pop-up-send-email input:-ms-input-placeholder,
+.pop-up-send-email textarea:-ms-input-placeholder
+{
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+
+
+  color: #a9a9a9;
+}
+
+
+.pop-up-send-email input::-ms-input-placeholder,
+.pop-up-send-email textarea::-ms-input-placeholder
+{
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+
+
+  color: #a9a9a9;
+}
+
+
 .pop-up-send-email input::placeholder,
 .pop-up-send-email textarea::placeholder
 {
@@ -2940,27 +2977,54 @@ input[type='radio'].visually-hidden
   background-color: #fff;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
+    -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
   70% {
+    -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
 
   90% {
+    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
 
   100% {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
 }
 
-@keyframes shake {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@-webkit-keyframes shake {
   0%,
   100% {
+    -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
   }
 
@@ -2969,6 +3033,7 @@ input[type='radio'].visually-hidden
   50%,
   70%,
   90% {
+    -webkit-transform: translate(-10px, -50%);
     transform: translate(-10px, -50%);
   }
 
@@ -2976,16 +3041,43 @@ input[type='radio'].visually-hidden
   40%,
   60%,
   80% {
+    -webkit-transform: translate(10px, -50%);
+    transform: translate(10px, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate(-10px, -50%);
+    transform: translate(-10px, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate(10px, -50%);
     transform: translate(10px, -50%);
   }
 }
 
 .modal-bounce-open {
   display: block;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
 .modal-shake-error {
+  -webkit-animation: shake 0.6s ;
   animation: shake 0.6s ;
 }
-
