@@ -38,7 +38,7 @@
     <div class="container_center">
       <h1 class="main-header__site-title">
         Интернет-магазин
-        строительных материалов
+        строительных материалов &nbsp; &nbsp;
         и инструментов для ремонта
       </h1>
 
@@ -113,14 +113,29 @@
             action="https://echo.htmlacademy.ru">
 
         <fieldset class="filters-form__price">
-          <!--there will be the content of the red area-->
+          <legend>ЦЕНА:</legend>
+          <div class="filters-form__slider">
+            <div class="filters-form__range">
+              <div class="filters-form__line"></div>
+            </div>
+            <button class="filters-form__control" type="button">
+              <span class="visually-hidden">Нижняя граница цены</span>
+            </button>
+            <button class="filters-form__control" type="button">
+              <span class="visually-hidden">Верхняя граница цены</span>
+            </button>
+          </div>
+          <div class="filters-form__price-values">
+            <input type="text" name="min-price" value="0" aria-label="Нижняя граница цены">
+            —
+            <input type="text" name="max-price" value="30000" aria-label="Верхняя граница цены">
+          </div>
         </fieldset>
 
         <fieldset class="filters-form__manufacturers">
           <legend>ПРОИЗВОДИТЕЛИ:</legend>
           <ul>
             <li>
-
               <label class="filters-form__checkbox-container"> BOSCH
                 <input type="checkbox" name="Bosch" checked>
                 <span class="filters-form__checkbox"></span>
@@ -136,7 +151,7 @@
             <li>
 
               <label class="filters-form__checkbox-container"> MAKITA
-                <input type="checkbox" name="Makita"checked>
+                <input type="checkbox" name="Makita" checked>
                 <span class="filters-form__checkbox"></span>
               </label>
             </li>
@@ -185,7 +200,19 @@
         <section class="sorting">
           <h3>СОРТИРОВКА:</h3>
 
-          <!--there will be the content of the red area-->
+          <div class="sorting__source">
+            <button class="sorting__button sorting__button_active" type="button">По цене</button>
+            <button class="sorting__button" type="button">По типу</button>
+            <button class="sorting__button" type="button">По функционалу</button>
+          </div>
+          <div class="sorting__order">
+            <button class="arrow sorting__ascending sorting__arrow_active" type="button" >
+              <span class="visually-hidden">По возрастанию</span>
+            </button>
+            <button class="arrow sorting__descending" type="button">
+              <span class="visually-hidden">По убыванию</span>
+            </button>
+          </div>
         </section>
 
         <section class="catalog">
@@ -466,7 +493,7 @@
 
   </footer>
 
-  <section class="pop-up-item-in-cart pop-up visually-hidden">
+  <section class="pop-up-item-in-cart pop-up">
     <div class="wrap_center">
       <h3 class="visually-hidden">
         Сообщение об успешном добавлении товара в корзину

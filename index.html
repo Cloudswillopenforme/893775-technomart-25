@@ -39,7 +39,7 @@
       <div class="container_center">
         <h1 class="main-header__site-title">
           Интернет-магазин
-          строительных материалов
+          строительных материалов&nbsp; &nbsp;
           и инструментов для ремонта
         </h1>
 
@@ -113,17 +113,28 @@
 
           <div class="promo-wrap_horizontal">
             <div class="promo__slider">
+              <input class="visually-hidden" id="slider-1" type="radio" name="slider">
+              <input class="visually-hidden" id="slider-2" type="radio" name="slider" checked>
+              <div class="slider__slider-control">
+                <label for="slider-1">
+                  <span class="visually-hidden">«Перфораторы»</span>
+                </label>
+                <label for="slider-2">
+                  <span class="visually-hidden">«Дрели»</span>
+                </label>
+              </div>
               <ul class="promo__slider-list">
-                <li class="promo__slider-item promo__slider-item-1">
+              <li class="promo__slider-item promo__slider-item-1">
+                <h3 class="promo__slider-title">Перфораторы</h3>
+                <p class="promo__slider-comment">Настоящие мужские игрушки</p>
+                <a class="promo__slider-btn button-red" href="catalog.html">Открыть каталог</a>
+              </li>
+                <li class="promo__slider-item promo__slider-item-2">
                   <h3 class="promo__slider-title">Дрели</h3>
                   <p class="promo__slider-comment">Соседям на радость!</p>
                   <a class="promo__slider-btn button-red" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="promo__slider-item promo__slider-item-2 visually-hidden">
-                  <h3 class="promo__slider-title">Перфораторы</h3>
-                  <p class="promo__slider-comment">Настоящие мужские игрушки</p>
-                  <a class="promo__slider-btn button-red" href="catalog.html">Открыть каталог</a>
-                </li>
+
               </ul>
             </div>
             <div class="promo-wrap_vertical">
@@ -167,7 +178,7 @@
                 <img src="img/popular-items/item-image-1.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
-                Перфоратор Bosch BFG 9000
+                Перфоратор BOSCH BFG 9000
               </h4>
               <p class="catalog-item__price-old" aria-label="Старая цена">
                 32500 р.
@@ -187,7 +198,7 @@
                 <img src="img/popular-items/item-image-2.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
-                Перфоратор BBosch BFG 3000
+                Перфоратор BOSCH BFG 3000
               </h4>
               <p class="catalog-item__price-old" aria-label="Старая цена">
                 22500 р.
@@ -207,7 +218,7 @@
                 <img src="img/popular-items/item-image-3.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
-                Перфоратор Bosch BFG 6000
+                Перфоратор BOSCH BFG 6000
               </h4>
               <p class="catalog-item__price-old" aria-label="Старая цена">
                 30500 р.
@@ -224,10 +235,10 @@
                 <a class="catalog-item__favourites-btn" href="#">В ЗАКЛАДКИ</a>
               </div>
               <p class="catalog-item__image">
-                <img src="img/popular-items/item-image-4.jpg" width="216" height="170" alt="Bosch BFG 9000">
+                <img src="img/popular-items/item-image-2.jpg" width="216" height="170" alt="Bosch BFG 9000">
               </p>
               <h4 class="catalog-item__name">
-                Перфоратор Bosch BFG 2000
+                Перфоратор BOSCH BFG 2000
               </h4>
               <p class="catalog-item__price-old" aria-label="Старая цена">
 
@@ -288,23 +299,27 @@
 
             <div class="tab-slider">
               <div class="tab-slider__tab-controls">
-                <button class="tab-slider__tab-controls-btn active" type="button">Доставка</button>
-                <button class="tab-slider__tab-controls-btn" type="button">Гарантия</button>
-                <button class="tab-slider__tab-controls-btn" type="button">Кредит</button>
+                <button class="tab-slider__tab-controls-btn active" type="button" data-tab-content="tab-slider__tabs-delivery">
+                  Доставка</button>
+                <button class="tab-slider__tab-controls-btn" type="button" data-tab-content="tab-slider__tabs-guarantee">
+                  Гарантия</button>
+                <button class="tab-slider__tab-controls-btn" type="button" data-tab-content="tab-slider__tabs-credit">
+                  Кредит</button>
               </div>
 
               <ul class="tab-slider__tabs">
-                <li class="tab-slider__tabs_delivery">
-                  <h3 class="tab-slider__tab-title">Доставка</h3>
+                <li class="tab-slider__tabs-delivery">
+                  <h3 class="tab-slider__tab-title" >Доставка</h3>
 
                   <p class="tab-slider__tab-content">
-                    Мы с удовольствием доставим ваш товар прямо<br>
-                    к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
+                    Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно! <br>
+                    Ведь мы неплохо заработаем, <br>
                     поднимая его на ваш этаж!
                   </p>
                 </li>
 
-                <li class="tab-slider__tabs_guarantee" hidden>
+                <li class="tab-slider__tabs-guarantee">
                   <h3 class="tab-slider__tab-title">Гарантия</h3>
 
                   <p class="tab-slider__tab-content">
@@ -314,14 +329,14 @@
                   </p>
                 </li>
 
-                <li class="tab-slider__tabs_credit" hidden>
+                <li class="tab-slider__tabs-credit">
                   <h3 class="tab-slider__tab-title">Кредит</h3>
 
                   <p class="tab-slider__tab-content">
                     Залезть в долговую яму стало проще!<br>
                     Кредитные консультанты придут вам на помощь.
                   </p>
-                  <a class="tab-slider__tab-content-btn" href="#">Отправить заявку</a>
+                  <a class="tab-slider__tab-content-btn button-red" href="#">Отправить заявку</a>
                 </li>
 
               </ul>
@@ -437,7 +452,7 @@
 
     </footer>
 
-  <section class="pop-up-send-email pop-up visually-hidden">
+  <section class="pop-up-send-email pop-up">
 
     <div class="wrap_center">
       <h3 class="visually-hidden">
@@ -445,26 +460,26 @@
       </h3>
       <button class="pop-up__close">Закрыть</button>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post" id="send-email-form">
         <div class="wrap">
-          <label> Ваше имя: <input type="text" placeholder="Имя Фамилия"></label>
-          <label>Ваш E-mail:<input type="text" placeholder="email@example.com"></label>
+          <label> Ваше имя: <input type="text" name="name" placeholder="Имя Фамилия"></label>
+          <label>Ваш E-mail:<input type="text" name="email" placeholder="email@example.com"></label>
         </div>
-        <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>
+        <label>Текст письма:<textarea name="email-text" placeholder="В свободной форме"></textarea></label>
       </form>
     </div>
     <div class="container_light-gray">
-      <button class="send-email-btn button-red" type="submit">Отправить</button>
+      <button class="send-email-btn button-red" type="submit" form="send-email-form">Отправить</button>
     </div>
 
   </section>
 
-  <section class="pop-up-big-map pop-up visually-hidden">
+  <section class="pop-up-big-map pop-up">
     <h3 class="visually-hidden">
       Модальное окно с большой картой
     </h3>
     <button class="pop-up__close">Закрыть</button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1558297776954!5m2!1sen!2sru" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya+Konyushennaya+Street%2C+19%2F8%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1558297776954!5m2!1sen!2sru" width="940" height="446" style="border:0" allowfullscreen></iframe>
   </section>
     <script src="js/script.js" async></script>
   </body>
